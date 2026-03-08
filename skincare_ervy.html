@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Ervy Beauty</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f6e1e6;
+}
+
+/* HEADER */
+
+.header{
+background:#e5a4b1;
+color:white;
+text-align:center;
+padding:10px;
+font-size:45px;
+font-weight:bold;
+}
+
+/* SECTION */
+
+.section{
+text-align:center;
+padding:10px;
+}
+
+/* KATEGORI */
+
+.kategori{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.kategori-box{
+width:300px;
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.kategori-box img{
+width:100%;
+border-radius:10px;
+}
+
+.kategori-box p{
+font-size:18px;
+font-weight:bold;
+}
+
+/* PRODUK */
+
+.produk-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:10px;
+}
+
+.produk{
+width:180px;
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+cursor:pointer;
+}
+
+.produk img{
+width:100%;
+border-radius:10px;
+}
+
+.produk p{
+font-weight:bold;
+}
+
+/* POPUP */
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.popup-content{
+background:white;
+width:350px;
+padding:25px;
+border-radius:15px;
+margin:150px auto;
+text-align:center;
+}
+
+button{
+background:#ff4f8b;
+border:none;
+padding:10px 20px;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+ERVY BEAUTY
+</div>
+<div class="section">
+
+<h2>Kulit Glowing Sehat dalam 7 Hari</h2>
+
+<p>
+Perawatan wajah premium untuk mencerahkan kulit, 
+menghilangkan noda hitam, dan membuat wajah glowing alami.
+</p>
+
+<a href="https://wa.me/6281230604818">
+<button>Beli Sekarang</button>
+</a>
+
+</div>
+
+<body>
+
+<div class="section">
+
+<h2>Kategori Produk</h2>
+
+<div class="kategori">
+
+<div class="kategori-box">
+
+<img src="d:\DOWNLOAD\konten ervy\PRODUK.JPG.jpeg">
+
+<p>Ervy Beauty Perawatan Wajah Lengkap Glow Sehat</p>
+
+<button class="btn"
+onclick="bukaProduk(
+'Perawatan Wajah Lengkap',
+'Paket lengkap untuk mencerahkan wajah, menghilangkan noda hitam dan membuat kulit glowing sehat.',
+'Rp 350.000'
+)">
+Lihat Produk
+</button>
+
+</div>
+
+
+<div class="kategori-box">
+
+<img src="d:\DOWNLOAD\konten ervy\tangan 1.jpeg">
+
+<p>Body Cream</p>
+
+<button class="btn"
+onclick="bukaProduk(
+'Body Cream',
+'Body cream untuk mencerahkan kulit tubuh dan membuat kulit lebih halus.',
+'Rp 120.000'
+)">
+Lihat Produk
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+
+<div class="section">
+
+<h2>Produk Kami</h2>
+
+<div class="produk-container">
+
+
+<div class="produk" onclick="bukaProduk('Cream Malam','Mencerahkan kulit dan regenerasi malam hari','Rp 95.000')">
+
+<img src="d:\DOWNLOAD\konten ervy\night crem.jpeg">
+
+<p>Cream Malam</p>
+
+</div>
+
+<div class="produk" onclick="bukaProduk('Serum','Mengandung vitamin C untuk glowing','Rp 120.000')">
+
+<img src="d:\DOWNLOAD\konten ervy\serum 8.jpeg">
+
+<p>Serum</p>
+
+</div>
+
+
+<div class="produk" onclick="bukaProduk('Krim Pagi','Melindungi kulit dari sinar matahari','Rp 90.000')">
+
+<img src="d:\DOWNLOAD\konten ervy\day1.jpeg">
+
+<p>Krim Pagi</p>
+
+</div>
+
+
+<div class="produk" onclick="bukaProduk('Toner','Membersihkan dan mengecilkan pori','Rp 80.000')">
+
+<img src="d:\DOWNLOAD\konten ervy\d.jpeg">
+
+<p>Toner</p>
+
+</div>
+
+
+<div class="produk" onclick="bukaProduk('Sabun Muka','Membersihkan wajah dan mengangkat minyak','Rp 75.000')">
+
+<img src="d:\DOWNLOAD\konten ervy\facial wash.jpeg">
+
+<p>Sabun Muka</p>
+
+</div>
+
+
+</div>
+
+</div>
+<div class="section">
+
+<h2>Manfaat Ervy Beauty</h2>
+
+<div class="produk-container">
+
+<div class="produk">
+<p>✨ Mencerahkan kulit kusam</p>
+</div>
+
+<div class="produk">
+<p>💧 Melembapkan wajah</p>
+</div>
+
+<div class="produk">
+<p>🌿 Aman untuk kulit sensitif</p>
+</div>
+
+<div class="produk">
+<p>⚡ Membuat wajah glowing</p>
+</div>
+<div class="section">
+
+<div class="section">
+
+<h2>Testimoni Customer</h2>
+
+<div class="produk-container">
+
+<div class="produk">
+
+<img src="d:\DOWNLOAD\konten ervy\testi fix..png" style="width:100%; border-radius:10px;">
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<p><b>Rina - Jakarta</b></p>
+
+<p>Wajah saya jadi glowing setelah pakai Ervy Beauty</p>
+
+</div>
+
+
+<div class="produk">
+
+<img src="d:\DOWNLOAD\konten ervy\testi kelihatan beda.jpeg" style="width:100%; border-radius:10px;">
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<p><b>Sarah - Bandung</b></p>
+
+<p>Bekas jerawat mulai memudar dalam 2 minggu</p>
+
+</div>
+
+
+<div class="produk">
+
+<img src="d:\DOWNLOAD\ervy beauty 3.png" style="width:100%; border-radius:10px;">
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<p><b>Maya - Surabaya</b></p>
+
+<p>Kulit terasa lebih halus dan cerah</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div><div class="section">
+
+<h2>Cara Pemakaian</h2>
+
+<p>1. Cuci wajah menggunakan sabun muka</p>
+<p>2. Gunakan toner</p>
+<p>3. Gunakan serum</p>
+<p>4. Gunakan cream pagi / malam</p>
+
+</div><div class="section">
+
+<h2>Kenapa Harus Ervy Beauty?</h2>
+
+<p>✔ Produk aman digunakan</p>
+<p>✔ Bahan berkualitas</p>
+<p>✔ Sudah digunakan banyak pelanggan</p>
+
+</div><div style="background:#333;color:white;text-align:center;padding:30px">
+
+<h3>ERVY BEAUTY</h3>
+
+<p>Perawatan kulit premium untuk wajah glowing sehat</p>
+
+<p>WhatsApp: 081230604818</p>
+
+<p>© 2026 Ervy Beauty</p>
+
+</div>.produk:hover{
+
+transform:scale(1.05);
+transition:0.3s;
+
+}
+</div>
+
+</div>
+
+
+<div class="popup" id="popup">
+
+<div class="popup-content">
+
+<h2 id="nama"></h2>
+
+<p id="deskripsi"></p>
+
+<p id="harga"></p>
+
+<br>
+
+<button onclick="tutup()">Tutup</button>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function bukaProduk(nama,deskripsi,harga){
+
+document.getElementById("popup").style.display="block"
+
+document.getElementById("nama").innerHTML = nama
+document.getElementById("deskripsi").innerHTML = deskripsi
+document.getElementById("harga").innerHTML = harga
+
+}
+
+function tutup(){
+
+document.getElementById("popup").style.display="none"
+
+}
+
+</script>
+
+
+</body>
+
+</html>
